@@ -1,0 +1,15 @@
+name = "euclidean"
+description = "Euclidean algorithm for SPARK experimentation"
+version = "0.1.0-dev"
+
+authors = ["John Perry"]
+maintainers = ["John Perry <devotus@yahoo.com>"]
+maintainers-logins = ["johnperry-math"]
+licenses = "GPL-3.0-or-later"
+website = ""
+tags = ["euclidean", "algorithm", "spark"]
+
+executables = ["euclidean"]
+
+[[depends-on]]
+gnatprove = "^11.2.3"
