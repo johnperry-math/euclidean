@@ -38,15 +38,15 @@
 --   another @code Ring_Element whose @code Size is no larger than the parameters'
 generic
 
+   type Ring_Element is private;
    -- specifies the type of objects for which we want to compute gcd's;
    -- algebraically speaking, this should be a Euclidean Ring.
-   type Ring_Element is private;
 
+   with function "=" (Left, Right : Ring_Element) return Boolean is <>;
    -- should returns True iff Left and Right have the same value.
    -- @param Left a ring element to compare
    -- @param Right a ring element to compare
    -- @return whether Left and Right are equal
-   with function "=" (Left, Right : Ring_Element) return Boolean is <>;
 
    with function Size (Value : Ring_Element) return Integer with
       Pre => Value /= 0;
